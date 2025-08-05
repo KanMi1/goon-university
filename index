@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+        <img class="rectangle" src="img/rectangle-1.png" />
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="kan-mihara">Kan Mihara<br />SKN44<br />STEM no.15</div>
+            <div class="overlap-group-2">
+              <p class="text-wrapper">Hello, my name is Kan. I like dogs. I hate minorities and waking up early.</p>
+              <p class="p">
+                “icl ts pmo sm n sb rn ngl, r u srsly srs n fr rn vro? Smh lol atp js go 💔... b fr vro, idek nm, brb
+                gng gtg atm lmao, bt ts pmo 2 js lmk lol onb fr, ac nvm b wt istg ts vro keys🙏💔 ts pmo”
+              </p>
+              <div class="text-wrapper-2">คำคม</div>
+            </div>
+          </div>
+          <img class="image" src="img/image-2.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
