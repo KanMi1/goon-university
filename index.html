@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:skills */
+#skills {
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+
+  .skills-container {
+    max-width: 956px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 41px;
+  }
+
+  .education-column {
+    flex: 0 0 361px;
+  }
+
+  .skills-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 57px; /* (1261 - 1204) to align with main title */
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 36px 0;
+  }
+
+  .education-table-img {
+    width: 361px;
+    height: 503px;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+  }
+  
+  .skills-column .skill-item:last-child .skill-subtitle {
+     margin-bottom: 12px;
+  }
+
+  .skill-image {
+    width: 100%;
+    max-width: 295px;
+    object-fit: cover;
+  }
+
+  .skill-caption {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 8px 0 0 0;
+  }
+  
+  .skills-column .skill-item:last-child .skill-caption {
+    padding-left: 59px; /* (163 - 104) to match design */
+  }
+
+  @media (max-width: 992px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    .education-column {
+      flex: 1;
+      text-align: center;
+    }
+    .skills-column {
+      padding-top: 0;
+      align-items: center;
+    }
+    .skill-item {
+      align-items: center;
+    }
+    .skills-column .skill-item:last-child .skill-caption {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 28px;
+    }
+    .education-table-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="skills">
+  <div class="skills-container">
+    <div class="education-column">
+      <h2 class="section-title">Education & Skills</h2>
+      <img src="images/4_6.svg" alt="A table showing education history from 2014 to 2025." class="education-table-img">
+    </div>
+    <div class="skills-column">
+      <div class="skill-item">
+        <h3 class="skill-subtitle">Soft Skill:</h3>
+        <img src="images/dbe5e3f255163a93927fdc19c78a2bb9bb07b3b1.png" alt="A screenshot of a time tracking app showing a daily average of 12 hours and 45 minutes of screen time." class="skill-image">
+        <p class="skill-caption">An expert in screen-staring</p>
+      </div>
+      <div class="skill-item">
+        <h3 class="skill-subtitle">Hard Skill:</h3>
+        <img src="images/aae9dc2db0cf462a181fc9fa1f33a88d4018f820.png" alt="A person on a stage at an event with ACT logos." class="skill-image">
+        <p class="skill-caption">Mathematics</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
