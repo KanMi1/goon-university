@@ -1,0 +1,644 @@
+//page1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:profile */
+.profile-section {
+        background-color: var(--color-profile-bg);
+        padding-top: 41px;
+        padding-bottom: 48px;
+    }
+
+    .profile-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .profile-image {
+        width: 175px;
+        height: 164px;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .profile-text {
+        display: flex;
+        align-items: flex-start;
+        gap: 34px;
+        flex-grow: 1;
+    }
+
+    .profile-title {
+        margin: 7px 0 0 0;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.21;
+        width: 264px;
+        flex-shrink: 0;
+    }
+
+    .profile-description {
+        margin: 20px 0 0 0;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.21;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .profile-content, .profile-text {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-text {
+            gap: 20px;
+        }
+        .profile-title {
+            font-size: 36px;
+            width: auto;
+        }
+        .profile-description {
+            font-size: 20px;
+        }
+    }
+
+/* CSS for section section:main-content */
+#main-content {
+        padding-top: 105px;
+        padding-bottom: 112px;
+        overflow: hidden; /* Contains the negative margin of the quote card */
+    }
+
+    .main-content-grid {
+        display: grid;
+        grid-template-columns: 263px 1fr;
+        gap: 72px;
+        align-items: start;
+    }
+
+    .school-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .school-logo {
+        width: 263px;
+        height: 263px;
+        object-fit: contain;
+    }
+
+    .school-name {
+        margin: 0;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.21;
+        text-align: center;
+        max-width: 307px;
+    }
+
+    .quote-card {
+        background-color: var(--color-quote-bg);
+        height: 550px;
+        position: relative;
+        /* The card starts at y=-136, while the section content starts at y=-31.
+           So the card is positioned 105px higher than the logo. */
+        margin-top: -105px;
+        padding: 80px 11px 20px 11px;
+    }
+
+    .quote-header {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        right: 1px;
+        height: 61px;
+        background-color: var(--color-quote-header-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quote-heading {
+        margin: 0;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.21;
+    }
+
+    .quote-text {
+        margin: 0;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.21;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        #main-content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .main-content-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            justify-items: center;
+        }
+        .quote-card {
+            margin-top: 0;
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+        }
+        .quote-text, .quote-heading {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .quote-text, .quote-heading {
+            font-size: 24px;
+        }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="profile">
+    <div class="profile-section">
+        <div class="container profile-content">
+            <img src="images/8ff87197bd4c6f3652c02f0fb776aa454e9588fb.png" alt="Profile picture of Kan Mihara" class="profile-image">
+            <div class="profile-text">
+                <h1 class="profile-title">Kan Mihara<br>SKN44<br>STEM no.15</h1>
+                <p class="profile-description">Hello, my name is Kan. I like dogs. I hate minorities and waking up early.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="main-content">
+    <div class="container main-content-grid">
+        <div class="school-info">
+            <img src="images/3228aceabe1f819a51df8d5c9dc766599d7471b8.png" alt="Suankularb Wittayalai Nonthaburi school logo" class="school-logo">
+            <p class="school-name">Suankularb Wittayalai Nonthaburi</p>
+        </div>
+        <div class="quote-card">
+            <div class="quote-header">
+                <h2 class="quote-heading">คำคม</h2>
+            </div>
+            <p class="quote-text">“icl ts pmo sm n sb rn ngl, r u srsly srs n fr rn vro? Smh lol atp js go 💔... b fr vro, idek nm, brb gng gtg atm lmao, bt ts pmo 2 js lmk lol onb fr, ac nvm b wt istg ts vro keys🙏💔 ts pmo”</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+//page2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:achievements */
+.achievements-container {
+    max-width: 1054px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .achievements-header {
+    background-color: #e89f9f;
+    padding: 14px 33px;
+  }
+
+  .achievements-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0;
+  }
+
+  .achievements-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11px 20px 24px;
+  }
+
+  .achievement-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .achievement-image {
+    width: 423px;
+    height: 317px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .achievement-caption {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+    max-width: 825px;
+    padding: 0 10px;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .achievements-container {
+      margin: 20px;
+    }
+
+    .achievements-header {
+      padding: 12px 20px;
+    }
+
+    .achievements-title,
+    .achievement-caption {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .achievements-container {
+      margin: 15px;
+    }
+    
+    .achievements-title,
+    .achievement-caption {
+      font-size: 22px;
+    }
+
+    .achievements-header {
+      padding: 10px 15px;
+    }
+
+    .achievements-body {
+      padding: 10px 15px 20px;
+    }
+    
+    .achievement-item {
+        gap: 12px;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="achievements">
+  <div class="achievements-container">
+    <header class="achievements-header">
+      <h1 class="achievements-title">Achievements</h1>
+    </header>
+    <div class="achievements-body">
+      <figure class="achievement-item">
+        <img class="achievement-image" src="images/aae9dc2db0cf462a181fc9fa1f33a88d4018f820.png" alt="A student receiving an award on stage for the ACT Math competition">
+        <figcaption class="achievement-caption">Achieved 4th place in the ACT Math competition</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+//page3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:skills */
+#skills {
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+
+  .skills-container {
+    max-width: 956px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 41px;
+  }
+
+  .education-column {
+    flex: 0 0 361px;
+  }
+
+  .skills-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 57px; /* (1261 - 1204) to align with main title */
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 36px 0;
+  }
+
+  .education-table-img {
+    width: 361px;
+    height: 503px;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+  }
+  
+  .skills-column .skill-item:last-child .skill-subtitle {
+     margin-bottom: 12px;
+  }
+
+  .skill-image {
+    width: 100%;
+    max-width: 295px;
+    object-fit: cover;
+  }
+
+  .skill-caption {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 8px 0 0 0;
+  }
+  
+  .skills-column .skill-item:last-child .skill-caption {
+    padding-left: 59px; /* (163 - 104) to match design */
+  }
+
+  @media (max-width: 992px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    .education-column {
+      flex: 1;
+      text-align: center;
+    }
+    .skills-column {
+      padding-top: 0;
+      align-items: center;
+    }
+    .skill-item {
+      align-items: center;
+    }
+    .skills-column .skill-item:last-child .skill-caption {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 28px;
+    }
+    .education-table-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="skills">
+  <div class="skills-container">
+    <div class="education-column">
+      <h2 class="section-title">Education & Skills</h2>
+      <img src="images/4_6.svg" alt="A table showing education history from 2014 to 2025." class="education-table-img">
+    </div>
+    <div class="skills-column">
+      <div class="skill-item">
+        <h3 class="skill-subtitle">Soft Skill:</h3>
+        <img src="images/dbe5e3f255163a93927fdc19c78a2bb9bb07b3b1.png" alt="A screenshot of a time tracking app showing a daily average of 12 hours and 45 minutes of screen time." class="skill-image">
+        <p class="skill-caption">An expert in screen-staring</p>
+      </div>
+      <div class="skill-item">
+        <h3 class="skill-subtitle">Hard Skill:</h3>
+        <img src="images/aae9dc2db0cf462a181fc9fa1f33a88d4018f820.png" alt="A person on a stage at an event with ACT logos." class="skill-image">
+        <p class="skill-caption">Mathematics</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+//page4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:contact */
+#contact {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container {
+    max-width: 562px;
+    width: 100%;
+  }
+
+  .contact-heading {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.31px;
+    text-align: left;
+    margin: 0;
+    /* Spacing based on coordinates: (details.y - heading.y) - heading.line-height = (1985 - 1940) - 36.31 = 8.69px */
+    margin-bottom: 9px;
+    /* Indentation based on coordinates: heading.x - container.x = -37 - (-58) = 21px */
+    padding-left: 21px;
+  }
+
+  .contact-details {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31.47px;
+    text-align: left;
+    margin: 0;
+    /* Indentation based on coordinates: details.x - container.x = -45 - (-58) = 13px */
+    padding-left: 13px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-heading {
+      font-size: 24px;
+      line-height: 1.2;
+      padding-left: 0;
+    }
+
+    .contact-details {
+      font-size: 20px;
+      line-height: 1.3;
+      padding-left: 0;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="contact">
+  <div class="contact-container">
+    <h2 class="contact-heading">Contact</h2>
+    <p class="contact-details">Tel. 0825155541<br>Mail: kan747m@gmail.com<br>34948.skn@skn.ac.th<br>tarargi112@gmail.com<br>masakurajima582@gmail.com<br>kan.mi.ha.1ra@gmail.com<br>kan.mi.1ha.ra@gmail.com<br>rimuru6243@gmail.com<br>m777kan@icloud.com<br>IG: not_kan12<br></p>
+  </div>
+</section>
+</body>
+</html>
+
+//page5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:certificates */
+.certificates-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 848px;
+    margin: 0 auto;
+    padding: 38px 29px 57px;
+    background-color: #ffffff;
+  }
+
+  .certificates-title {
+    margin: 0 0 40px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .certificate-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .certificate-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .certificate-caption {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .certificates-container {
+      padding: 24px 16px 40px;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="certificates">
+  <div class="certificates-container">
+    <h2 class="certificates-title">Certificates</h2>
+    <figure class="certificate-item">
+      <img src="images/9a132a3fc14a91e640876f58cc70eda72ebae7c7.png" alt="A certificate of completion from Goon University.">
+      <figcaption class="certificate-caption">Graduated from Goon University in Rangoon, Myanmar</figcaption>
+    </figure>
+  </div>
+</section>
+</body>
+</html>
