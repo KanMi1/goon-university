@@ -206,8 +206,8 @@ body.page1 .quote-text {
   }
   
   body.page1 .profile-image {
-    width: 50px;  /* Reduced from 150px */
-    height: 47px; /* Reduced from 140px */
+    width: 70px;  /* Reduced from 150px */
+    height: 60px; /* Reduced from 140px */
   }
 }
 
@@ -267,4 +267,5 @@ body.page5 {
   background-color: #ffffff;
   color: #000000;
 }
+
 
