@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+    /* Page 5 custom CSS (certificates section) */
+    .certificates-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 848px;
+      margin: 0 auto;
+      padding: 38px 29px 57px;
+      background-color: #ffffff;
+    }
+
+    .certificates-title {
+      margin: 0 0 40px 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .certificate-item {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 21px;
+    }
+
+    .certificate-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .certificate-caption {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .certificates-container {
+        padding: 24px 16px 40px;
+      }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body class="page5">
+  <section id="certificates">
+    <div class="certificates-container">
+      <h2 class="certificates-title">Certificates</h2>
+      <figure class="certificate-item">
+        <img src="images/9a132a3fc14a91e640876f58cc70eda72ebae7c7.png" alt="A certificate of completion from Goon University.">
+        <figcaption class="certificate-caption">Graduated from Goon University in Rangoon, Myanmar</figcaption>
+      </figure>
+    </div>
+  </section>
+</body>
+</html>
