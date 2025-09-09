@@ -1,25 +1,16 @@
-/* ---------- Page 1 Styles ---------- */
-.page1 {
-  --color-background: #ffffff;
-  --color-text: #000000;
-  --color-profile-bg: #e89f9f;
-  --color-quote-bg: #d9d9d9;
-  --color-quote-header-bg: #6cebe5;
-  --font-family-main: 'Inter', sans-serif;
-}
-
-.page1 body {
-  margin: 0;
-  font-family: var(--font-family-main);
-  background-color: var(--color-background);
-  color: var(--color-text);
-}
-
-.page1 * {
+/* ---------- Global Styles ---------- */
+* {
   box-sizing: border-box;
 }
 
-.page1 .container {
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
   max-width: 785px;
   margin-left: auto;
   margin-right: auto;
@@ -27,57 +18,250 @@
   padding-right: 20px;
 }
 
+/* ---------- Page 1 Styles ---------- */
+body.page1 {
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-profile-bg: #e89f9f;
+  --color-quote-bg: #d9d9d9;
+  --color-quote-header-bg: #6cebe5;
+  --font-family-main: 'Inter', sans-serif;
+  
+  margin: 0;
+  font-family: var(--font-family-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Profile Section */
+body.page1 .profile-section {
+  background-color: var(--color-profile-bg);
+  padding-top: 41px;
+  padding-bottom: 48px;
+}
+
+body.page1 .profile-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+body.page1 .profile-image {
+  width: 175px;
+  height: 164px;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+body.page1 .profile-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 34px;
+  flex-grow: 1;
+}
+
+body.page1 .profile-title {
+  margin: 7px 0 0 0;
+  color: var(--color-text);
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.21;
+  width: 264px;
+  flex-shrink: 0;
+}
+
+body.page1 .profile-description {
+  margin: 20px 0 0 0;
+  color: var(--color-text);
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.21;
+}
+
+/* Main Content Section */
+body.page1 #main-content {
+  padding-top: 105px;
+  padding-bottom: 112px;
+  overflow: hidden;
+}
+
+body.page1 .main-content-grid {
+  display: grid;
+  grid-template-columns: 263px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+body.page1 .school-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+body.page1 .school-logo {
+  width: 263px;
+  height: 263px;
+  object-fit: contain;
+}
+
+body.page1 .school-name {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+  text-align: center;
+  max-width: 307px;
+}
+
+body.page1 .quote-card {
+  background-color: var(--color-quote-bg);
+  height: 550px;
+  position: relative;
+  margin-top: -105px;
+  padding: 80px 11px 20px 11px;
+}
+
+body.page1 .quote-header {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  height: 61px;
+  background-color: var(--color-quote-header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.page1 .quote-heading {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.21;
+}
+
+body.page1 .quote-text {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.21;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body.page1 .profile-content, 
+  body.page1 .profile-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  body.page1 .profile-text {
+    gap: 20px;
+  }
+  
+  body.page1 .profile-title {
+    font-size: 36px;
+    width: auto;
+  }
+  
+  body.page1 .profile-description {
+    font-size: 20px;
+  }
+  
+  body.page1 .main-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  body.page1 .quote-card {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  
+  body.page1 .quote-text, 
+  body.page1 .quote-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  body.page1 .quote-text, 
+  body.page1 .quote-heading {
+    font-size: 24px;
+  }
+  
+  body.page1 .profile-image {
+    width: 150px;
+    height: 140px;
+  }
+}
+
 /* ---------- Page 2 Styles ---------- */
-.page2 body {
+body.page2 {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #f0f2f5;
 }
 
-.page2 *,
-.page2 *::before,
-.page2 *::after {
+body.page2 *,
+body.page2 *::before,
+body.page2 *::after {
   box-sizing: border-box;
 }
 
 /* ---------- Page 3 Styles ---------- */
-.page3 *,
-.page3 *::before,
-.page3 *::after {
+body.page3 *,
+body.page3 *::before,
+body.page3 *::after {
   box-sizing: border-box;
 }
 
-.page3 body {
+body.page3 {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
 
-.page3 img {
+body.page3 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
 /* ---------- Page 4 Styles ---------- */
-.page4 body {
+body.page4 {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
 }
 
-.page4 * {
+body.page4 * {
   box-sizing: border-box;
 }
 
 /* ---------- Page 5 Styles ---------- */
-.page5 * {
+body.page5 * {
   box-sizing: border-box;
 }
 
-.page5 body {
+body.page5 {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
